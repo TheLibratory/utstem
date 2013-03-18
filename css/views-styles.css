@@ -1,0 +1,61 @@
+/* $Id: views-styles.css,v 1.1 2010/10/05 23:53:50 spaceninja Exp $ */
+
+/**
+ * @file
+ * Views Styling
+ */
+
+.view-Schedule h3 {
+	background: #f8f8f8;
+	padding: 6px;
+	margin: 0;
+	border-bottom: 1px solid #ddd;
+}
+
+.views-row {
+	border-bottom: 1px solid #eee;
+	padding: 12px;
+	position: relative;
+	overflow: hidden;
+}
+.views-row-last { 
+	border-bottom: none;
+}
+
+
+.view-Schedule .views-field-title {
+	float: left;
+	font-weight: bold;
+}
+.view-Sessions .views-field-title h3 {
+	margin-top: 0;
+}
+
+.views-field-field-dcamp-sess-location-value {
+	float: right;
+}
+.views-field-field-dcamp-sess-presenters-uid {
+	display: block;
+	clear: both;
+}
+
+.views-table {
+	width: 100%;
+}
+.views-table tr.even {
+	background-color: #E4EEF1;
+}
+.views-table tr.odd {
+	background-color: #fff;
+}
+.views-table tr.even, .views-table tr.odd {
+  border-bottom: 1px solid #A4C4D0;
+	border-bottom: none;
+  padding: 0;
+}
+.views-table thead th {
+	border-bottom: 2px solid #A4C4D0;
+}
+.views-table td, .views-table th {
+	padding: 4px 6px;
+}

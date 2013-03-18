@@ -1,0 +1,194 @@
+/* $Id: layout-fixed.css,v 1.1 2010/10/05 23:53:50 spaceninja Exp $ */
+
+/**
+ * @file
+ * Layout Styling (DIV Positioning)
+ *
+ * Define CSS classes to create a table-free, 3-column, 2-column, or single
+ * column layout depending on whether blocks are enabled in the left or right
+ * columns.
+ *
+ * This layout is based on the Zen Columns layout method.
+ *   http://drupal.org/node/201428
+ *
+ * Only CSS that affects the layout (positioning) of major elements should be
+ * listed here.  Such as:
+ *   display, position, float, clear, width, height, min-width, min-height
+ *   margin, border, padding, overflow
+ */
+
+
+/*
+ * Body
+ */
+body {
+}
+
+#page-wrapper,
+.region-page-closure {
+  margin-left: auto;
+  margin-right: auto;
+	max-width: 96%;
+}
+
+#page {
+}
+
+/*
+ * Header
+ */
+#header {
+}
+
+#header .section {
+}
+
+#header-left {
+	
+}
+.front #header-left {
+	float: none;
+	padding-top: 24px;
+	margin-bottom: -48px;
+}
+
+#site-name a {
+	margin: 0 auto;
+}
+#header-right {
+	text-align: center;
+}
+
+.region-header {
+  clear: both; /* Clear the logo */
+}
+
+/*
+ * Main (container for everything else)
+ */
+#main-wrapper {
+  position: relative;
+}
+
+#main {
+	padding: 24px 24px;
+}
+
+/*
+ * Content
+ */
+.no-sidebars #content {
+  float: left; 
+  width: 100%;
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to #content .section. */
+}
+.one-sidebar #content {
+	float: left; 
+	/*width: 70%;*/
+	width: 100%;
+}
+
+#content .section {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Second sidebar
+ */
+.region-sidebar-second {
+	float: left;
+	width: 100%;
+}
+.region-sidebar-second .section {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Footer
+ */
+#footer {
+	padding: 12px 24px;
+}
+
+#footer .section {
+}
+
+/*
+ * Closure
+ */
+.region-page-closure /* See also the #page-wrapper declaration above that this div shares. */ {
+}
+
+/*
+ * Prevent overflowing content
+ */
+#header,
+#content,
+#navigation,
+.region-sidebar-first,
+.region-sidebar-second,
+#footer,
+.region-page-closure {
+  overflow: visible;
+  word-wrap: break-word; /* A very nice CSS3 property */
+}
+
+
+@media only screen and (min-width: 650px) {
+  /* 650 =================================================== */
+	#main {
+		padding: 24px 40px;
+	}
+	.one-sidebar #content {
+		float: left; 
+		width: 65%;
+	}
+	.region-sidebar-second {
+		float: right; /* LTR */
+		width: 32%;
+		padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-second .section. */
+	}
+	#footer {
+		padding: 24px;
+	}
+	#footer-nav {
+		float: left;
+	}
+	#ut-wordmark {
+		float: right;
+		margin: 0;
+	}
+
+}
+
+@media only screen and (min-width: 720px) {
+  /* 720 =================================================== */
+	#header-left {
+		float: left;
+	}
+	.front #header-left {
+		float: none;
+		padding-top: 48px;
+		margin-bottom: 0;
+	}
+	#header-right {
+		float: right;
+		text-align: right;
+		padding-top: 36px;
+	}
+	#site-nav {
+		float: right;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+  /* 992 =================================================== */
+	#page-wrapper,
+	.region-page-closure {
+		width: 960px;
+	}
+}
+
+

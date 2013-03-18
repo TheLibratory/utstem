@@ -1,0 +1,29 @@
+/* $Id: $ */
+
+/**
+ * @file
+ * Typography
+ *
+ * Common type styles
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
+
+@font-face {
+    font-family: 'Deming';
+    src: url('fonts/deming.eot');
+    src: url('fonts/deming.eot?#iefix') format('embedded-opentype'),
+         url('fonts/deming.woff') format('woff'),
+         url('fonts/deming.ttf') format('truetype'),
+         url('fonts/deming.svg#DemingEPRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#block-block-5 h2, .node h2, h2.title, .block h2 {
+	font: normal 1.142857143em/1.500 "Fjalla One", sans-serif; /* 16px */
+}
+
+.node h3 {
+	font-size: 1em;
+}

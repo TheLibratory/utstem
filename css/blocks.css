@@ -1,0 +1,138 @@
+/* $Id: blocks.css,v 1.1 2010/10/05 23:53:50 spaceninja Exp $ */
+
+/**
+ * @file
+ * Block Styling
+ */
+
+
+.block /* Block wrapper */ {
+  margin-bottom: 1em;
+}
+
+.block.region-odd /* Zebra striping for each block in the region */ {
+}
+
+.block.region-even /* Zebra striping for each block in the region */ {
+}
+
+.block.odd /* Zebra striping independent of each region */ {
+}
+
+.block.even /* Zebra striping independent of each region */ {
+}
+
+.region-count-1 /* Incremental count for each block in the region */ {
+}
+
+.count-1 /* Incremental count independent of each region */ {
+}
+
+.block h2.title /* Block title */ {
+}
+
+.block .content /* Block's content wrapper */ {
+}
+
+#block-aggregator-category-1 /* Block for the latest news items in the first category */ {
+}
+
+#block-aggregator-feed-1 /* Block for the latest news items in the first feed */ {
+}
+
+#block-block-1 /* First administrator-defined block */ {
+	border-bottom: 1px solid #5B95AA;
+	padding: 0 0 12px 0;
+	margin-bottom: 0;
+}
+
+#block-blog-0 /* "Recent blog posts" block */ {
+}
+
+#block-book-0 /* "Book navigation" block for the current book's table of contents */ {
+}
+
+#block-comment-0 /* "Recent comments" block */ {
+}
+
+#block-forum-0 /* "Active forum topics" block */ {
+}
+
+#block-forum-1 /* "New forum topics" block */ {
+}
+
+#block-menu-primary-links /* "Primary links" block */ {
+}
+
+#block-menu-secondary-links /* "Secondary links" block */ {
+}
+
+#block-node-0 /* "Syndicate" block for primary RSS feed */ {
+}
+
+#block-poll-0 /* "Most recent poll" block */ {
+}
+
+#block-profile-0 /* "Author information" block for the profile of the page's author */ {
+}
+
+#block-search-0 /* "Search form" block */ {
+}
+
+#block-statistics-0 /* "Popular content" block */ {
+}
+
+#block-user-0 /* "User login form" block */ {
+}
+
+#block-user-1 /* "Navigation" block for Drupal navigation menu */ {
+}
+
+#block-user-2 /* "Who's new" block for a list of the newest users */ {
+}
+
+#block-user-3 /* "Who's online" block for a list of the online users */ {
+}
+
+.sidebar .block {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 1.5em;
+	margin-bottom: 1.5em;
+}
+.sidebar .block:last-child {
+	border-bottom: none;
+}
+.sidebar .block p:last-child {
+	margin-bottom: 0;
+}
+
+.sidebar .block .inactive-step {
+	color: #888;
+}
+
+a.btn {
+	display: block;
+	background: #ef671e; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ef671e 0%, #bd490c 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ef671e), color-stop(100%,#bd490c)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ef671e 0%,#bd490c 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ef671e 0%,#bd490c 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ef671e 0%,#bd490c 100%); /* IE10+ */
+	background: linear-gradient(top,  #ef671e 0%,#bd490c 100%); /* W3C */
+	line-height: 48px;
+	height: 48px;
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 800;
+	text-align: center;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), inset 0 -1px 0 rgba(0,0,0,0.3), 0 0 0 4px #e4e4e4;
+}
+a.btn:hover {
+	color: #6A2906;
+	text-shadow: 0 0 4px rgba(255,255,255,0.6);
+}
+
+

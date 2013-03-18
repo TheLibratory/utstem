@@ -1,0 +1,35 @@
+/* $Id: block-editing.css,v 1.1 2010/10/05 23:53:50 spaceninja Exp $ */
+
+/**
+ * @file
+ * Zen's rollover edit links for blocks.
+ */
+
+
+section.block.with-block-editing {
+  position: relative;
+}
+
+section.block.with-block-editing div.edit {
+  display: none;
+  position: absolute;
+  right: 0; /* LTR */
+  top: 0;
+  z-index: 40;
+  border: 1px solid #111;
+	border-radius: 20px;
+  padding: 0 12px;
+  font-size: 0.75em;
+  background-color: #333;
+	background-color: rgba(0,0,0,0.5):
+}
+section.block.with-block-editing div.edit a {
+	color: #fff;
+	text-decoration: none;
+}
+section.block.with-block-editing div.edit a:hover {
+	text-decoration: underline;
+}
+section.block.with-block-editing:hover div.edit {
+  display: block;
+}

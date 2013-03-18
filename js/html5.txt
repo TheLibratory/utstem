@@ -1,0 +1,7 @@
+FILE QUARANTINED
+
+Microsoft Forefront Protection for Exchange Server removed a file since it was found to match a filter.
+File name: "utdc.tar.gz->->utdc/js/html5.js"
+Filter name: "FILE FILTER= Forbidden File Types: *.js"
+Transport - Scanned on AEMS server EXHUB02.
+For information about the blocking of specific attachments, see http://www.utexas.edu/its/help/messaging/363
