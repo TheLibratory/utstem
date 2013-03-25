@@ -8,6 +8,19 @@
  * miscellaneous Drupal elements that appear in the $content variable, such as
  * ul.links, .pager, .more-link, etc.
  */
+
+ #utlib-branding-bar {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-shadow: rgba(0,0,0,0.5) 1px 1px 2px; 
+}
+.bar-ut { background-color: white; height: 35px; }
+.bar-library { background-color: #cc5500; height: 28px; }
+#utlib-branding-bar > * { margin: 0; padding: 0; width: 100%;}
+#bar-liblogo { display: inline;}
+
  
 
 /*
@@ -119,10 +132,11 @@ div#site-name /* The name of the website */ {
 }
 
 #header-right p {
-	font: normal 1.142857143em/1.4 "Fjalla One", sans-serif;
-	color: #fff;
+	font: normal 1.5em/1.2 "Fjalla One", sans-serif;
+	color: #6C9EB2;
 	margin: 0;
-	text-shadow: 0 2px 0 rgba(0,0,0,0.4);
+	letter-spacing: 0.1em;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.2);
 }
 
 /*
@@ -220,10 +234,10 @@ div#site-name /* The name of the website */ {
 }
 
 #site-nav a.active {
-	color: #2F4F59;
 	color: #fff;
-	text-shadow: 0 1px 0px rgba(0,0,0,0.3);
+	text-shadow: 0 2px 2px rgba(0,0,0,0.5);
 	background-color: rgba(0,0,0,0.1);
+	font-weight: 600;
 }
 
 /*

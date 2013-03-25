@@ -121,6 +121,7 @@
   <?php print $scripts; ?>
 </head>
 <body class="<?php print $classes; ?>">
+  <?php include 'utbranding.php'; ?>
 
   <?php if ($primary_links): ?>
     <div id="skip-link"><em><a href="#site-nav"><?php print t('Jump to Navigation'); ?></a></em><!----></div>
@@ -136,9 +137,9 @@
               <div id="site-name">
                 <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
                 <?php if($is_front): ?>
-                	<img src="<?php print $directory; ?>/images/logo.front.png" alt="UT Austin DrupalCamp 2012" />
+                	<img src="<?php print $base_path . $directory; ?>/images/logo.front.png" alt="UT Austin DrupalCamp 2012" />
                 <?php else: ?>
-                	<img src="<?php print $directory; ?>/images/logo.png" alt="UT Austin DrupalCamp, May 18 2012" />
+                	<img src="<?php print $base_path . $directory; ?>/images/logo.png" alt="UT Austin DrupalCamp, May 18 2012" />
                 <?php endif;?>
                 </a>
               </div>
